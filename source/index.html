@@ -6,7 +6,139 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="10" height="10" alt="Магазин Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-search">
+            <li class="site-search__item">
+              <a class="site-search__button" href="#">Поиск по сайту</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-basket">
+            <li class="site-basket__item">
+              <a class="site-basket__button" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин "Мишка"</h1>
+
+      <section class="representation">
+        <header class="representation__header">
+          <h2 class="visually-hidden">Что представлено в нашем магазине</h2>
+          <b class="representation__slogan">Милые штучки ручной работы</b>
+        </header>
+        <table class="representation__list">
+          <tr>
+            <td class="representation__value representation__value--interior">
+              Предметы <br> интерьера
+            </td>
+            <td class="representation__value representation__value--toys">
+              Детские <br> игрушки
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="feature">
+        <h2 class="feature__name">Вязаные корзинки</h2>
+        <span class="feature__mark">товар недели</span>
+        <p class="feature__description">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="feature__specifi">
+          <tr>
+            <td class="feature__attribute">
+              Цвет:
+            </td>
+            <td class="feature__value">
+              «Тиффани»/серый
+            </td>
+          </tr>
+          <tr>
+            <td class="feature__attribute">
+              Диаметр:
+            </td>
+            <td class="feature__value">
+              25 см
+            </td>
+          </tr>
+          <tr>
+            <td class="feature__attribute">
+              Высота:
+            </td>
+            <td class="feature__value">
+              15 см
+            </td>
+          </tr>
+        </table>
+        <img class="feature__preview" src="http://placehold.it/150x100" width="10" height="10" alt="Вязаные корзинки">
+        <span class="feature__price">Цена: 990 руб.</span>
+        <a class="feature__button button" href="#">Заказать</a>
+      </section>
+
+      <section class="about-us">
+        <ul class="about-us__list">
+          <li class="about-us__link about-us__line--eco">
+            Экологически чистые материалы
+          </li>
+          <li class="about-us__link about-us__line--money">
+            Скандинавский стиль по российской цене
+          </li>
+          <li class="about-us__link about-us__line--like">
+            Увеличивает лайки на фотографиях
+          </li>
+          <li class="about-us__link about-us__line--love">
+            Связано вручную с любовью и умилением
+          </li>
+          <li class="about-us__link about-us__line--support">
+            Поддержка отечественного производителя
+          </li>
+          <li class="about-us__link about-us__line--pakege">
+            Поставляется в подарочной упаковке
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__inst" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__fb" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__tw" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link">
+          <img class="copyright__icon" src="http://placehold.it/150x100" width="10" height="10" alt="HTML Academy">
+        </a>
+      </div>
+
+    </footer>
 
   </body>
 </html>
