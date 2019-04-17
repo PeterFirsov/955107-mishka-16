@@ -9,13 +9,14 @@
   <body>
 
     <header class="page-header">
+
       <a class="page-header__logo">
         <span class="visually-hidden">Интернет-магазин "Мишка"</span>
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> </button>
-        <div class="main-nav__wrapper">
+        <img class="main-nav__logo-image" src="img/logo-tablet.svg" width="113" height="46" alt="Магазин Мишка">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="catalog.html">Каталог товаров</a>
@@ -23,10 +24,13 @@
             <li class="site-list__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
+            <li class="site-list__item site-list__item--delivery">
+              <span>Бесплатная доставка по России</span>
+            </li>
           </ul>
           <ul class="main-nav__list site-search">
             <li class="site-search__item">
-              <a class="site-search__button" href="#">Поиск по сайту</a>
+              <a class="site-search__button" href="#"><span class="site-search__text">Поиск по сайту</span></a>
             </li>
           </ul>
           <ul class="main-nav__list site-basket">
@@ -34,7 +38,6 @@
               <a class="site-basket__button" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 

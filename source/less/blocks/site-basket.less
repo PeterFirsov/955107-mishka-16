@@ -2,13 +2,35 @@
   list-style: none;
 }
 
-.site-basket__item {
+.site-basket__button {
+  display: block;
+  position: relative;
   padding-top: 33px;
   padding-bottom: 30px;
-}
-
-.site-basket__button {
   text-decoration: none;
   line-height: 24px;
   color: #000000;
+}
+
+.site-basket__button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: -40px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .site-basket__button {
+    padding-top: 31px;
+    padding-bottom: 29px;
+  }
+
+  .site-basket__button::before {
+    left: -50px;
+  }
 }
