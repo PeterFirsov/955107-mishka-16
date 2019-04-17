@@ -25,6 +25,9 @@
 
 .representation__list {
   width: 320px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: #63d1bb;
   color: #ffffff;
 }
@@ -56,14 +59,63 @@
 @media (min-width: 768px) {
   .representation {
     position: relative;
+    min-height: 746px;
     z-index: 0;
     top: -40px;
     width: 768px;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-position: center 0px;
+    background-position: center -3px;
     border-top: 1px solid #ececec;
   }
 
+  .representation__header {
+    padding-top: 80px;
+    margin-bottom: 373px;
+  }
 
+  .representation__slogan {
+    font-size: 43px;
+    line-height: 50px;
+    width: auto;
+  }
+
+  .representation__list {
+    display: flex;
+    position: relative;
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .representation__value {
+    width: 334px;
+    padding-left: 36px;
+    padding-top: 29px;
+    padding-bottom: 42px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0em;
+  }
+
+  .representation__value--interior {
+    background-position: 257px 30px;
+  }
+
+  .representation__value--toys {
+    background-position: 240px 32px;
+  }
+
+  .representation__list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -55px;
+    width: 768px;
+    height: 24px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: cover;
+
+  }
 
 }
