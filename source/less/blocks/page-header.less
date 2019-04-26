@@ -1,31 +1,19 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   background-color: rgb(255, 255, 255);
+
 }
-
-.page-header__logo {
-  padding-top: 22px;
-  height: 58px;
-  text-align: center;
-}
-
-.page-header__logo-image__tablet {
-  display: none;
-}
-
-
 
 @media (min-width: 768px) {
   .page-header {
-    display: block;
     width: 668px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .page-header__logo-image {
-    display: none;
-  }
+}
 
+@media (min-width: 1150px) {
+  .page-header {
+    width: 1050px;
+  }
 }

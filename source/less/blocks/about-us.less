@@ -1,7 +1,9 @@
 .about-us {
+  position: relative;
   width: 260px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1580px;
 }
 
 .about-us__name {
@@ -21,6 +23,162 @@
 }
 
 .about-us__link {
+  position: relative;
   padding-top: 0;
   margin-bottom: 83px;
+}
+
+.about-us__link--eco::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -55px;
+  left: 8px;
+  width: 32px;
+  height: 37px;
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+}
+
+.about-us__link--money::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -55px;
+  left: 0px;
+  width: 47px;
+  height: 29px;
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+}
+
+.about-us__link--like::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -50px;
+  left: 8px;
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+}
+
+.about-us__link--love::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -52px;
+  left: 4px;
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+}
+
+.about-us__link--support::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -51px;
+  left: -5px;
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+}
+
+.about-us__link--pakege::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -53px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    top: -35px;
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1402px;
+  }
+
+  .about-us__name {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 100px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__link {
+    width: 334px;
+    position: relative;
+    padding-top: 0;
+    margin-bottom: 113px;
+  }
+
+  .about-us__link--eco {
+    order: 1;
+  }
+
+  .about-us__link--money {
+    order: 3;
+  }
+
+  .about-us__link--like {
+    order: 5;
+  }
+
+  .about-us__link--love {
+    order: 2;
+  }
+
+  .about-us__link--support {
+    order: 4;
+  }
+
+  .about-us__link--pakege {
+    order: 6;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    top: -25px;
+    width: 700px;
+    margin-bottom: 1130px;
+  }
+
+  .about-us__name {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__link--love {
+    order: 2;
+    margin-left: 15px;
+  }
+
+  .about-us__link--support {
+    order: 4;
+    margin-left: 15px;
+  }
+
+  .about-us__link--pakege {
+    order: 6;
+    margin-left: 15px;
+  }
+
 }

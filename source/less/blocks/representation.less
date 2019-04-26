@@ -1,12 +1,10 @@
 .representation {
-  width: 320px;
   min-height: 410px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 71px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -20px;
+  background-color: #f9f9f9;
 }
 
 .representation__header {
@@ -30,12 +28,14 @@
   list-style: none;
   background-color: #63d1bb;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .representation__value {
   padding-left: 28px;
   padding-top: 25px;
-  padding-bottom: 27px;
+  padding-bottom: 30px;
   line-height: 24px;
   letter-spacing: 0.07em;
 }
@@ -59,13 +59,14 @@
 @media (min-width: 768px) {
   .representation {
     position: relative;
-    min-height: 746px;
+    min-height: 670px;
     z-index: 0;
     top: -40px;
-    width: 768px;
+    width: auto;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center -3px;
     border-top: 1px solid #ececec;
+    background-color: #f9f9f9;
   }
 
   .representation__header {
@@ -81,7 +82,6 @@
 
   .representation__list {
     display: flex;
-    position: relative;
     width: 668px;
     margin-left: auto;
     margin-right: auto;
@@ -104,18 +104,36 @@
   .representation__value--toys {
     background-position: 240px 32px;
   }
+}
 
-  .representation__list::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -55px;
-    width: 768px;
-    height: 24px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: cover;
-
+@media (min-width: 1150px) {
+  .representation {
+    top: -40px;
   }
 
+  .representation__header {
+    margin-bottom: 359px;
+  }
+
+  .representation__slogan {
+    font-size: 53px;
+    line-height: 57px;
+    width: auto;
+  }
+
+  .representation__list {
+    width: 1050px;
+  }
+
+  .representation__value {
+    width: 525px;
+  }
+
+  .representation__value--interior {
+    background-position: 448px 30px;
+  }
+
+  .representation__value--toys {
+    background-position: 430px 32px;
+  }
 }

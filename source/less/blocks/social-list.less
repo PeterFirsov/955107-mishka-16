@@ -1,15 +1,21 @@
 .social-list {
+  width: 144px;
+  display: flex;
   padding: 0;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
-  text-align: center;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social-list__item {
-  display: inline-block;
+  display: block;
 }
 
-.social-list__item:nth-child(2n+2) {
-  margin-left: 40px;
-  margin-right: 41px;
+.social-list__item:nth-of-type(3n+2) {
+  margin-left: 35px;
+  margin-right: 36px;
 }

@@ -18,7 +18,7 @@
   position: absolute;
   top: 35px;
   left: -40px;
-  width: 18px;
+  width: 20px;
   height: 18px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
@@ -28,9 +28,17 @@
   .site-basket__button {
     padding-top: 31px;
     padding-bottom: 29px;
+    padding-left: 82px;
   }
 
   .site-basket__button::before {
-    left: -50px;
+    left: 30px;
   }
+}
+
+@media (min-width: 1150px) {
+  .site-basket__button {
+    padding-left: 84px;
+  }
+
 }
