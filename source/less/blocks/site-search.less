@@ -2,13 +2,60 @@
   list-style: none;
 }
 
-.site-search__item {
+.site-search__button {
+  display: block;
+  position: relative;
   padding-top: 33px;
   padding-bottom: 30px;
-}
-
-.site-search__button {
   text-decoration: none;
   line-height: 24px;
   color: #000000;
+}
+
+.site-search__button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: -40px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .site-search__text {
+    display: none;
+  }
+
+  .site-search__button {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 81px;
+    height: 89px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .site-search__button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -9px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon-search.svg");
+  }
+}
+
+@media (min-width: 1150px) {
+  .site-search__button {
+    width: 82px;
+    height: 89px;
+    margin-left: 95px;
+  }
 }
