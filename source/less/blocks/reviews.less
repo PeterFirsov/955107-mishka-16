@@ -1,0 +1,151 @@
+.reviews {
+  background-color: #ffffff;
+}
+
+.reviews__wrapper {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+
+.reviews__name {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.reviews__person {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.reviews__e-mail {
+  display: block;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+.review__toggles {
+  border: 2px solid #ececec;
+  display: flex;
+  width: 260px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.review__left {
+  display: block;
+  width: 129px;
+  height: 50px;
+  border: none;
+  border-right: 2px solid #ececec;
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+.review__right {
+  display: block;
+  width: 125px;
+  height: 50px;
+  border: none;
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 35px center;
+  background-color: #ffffff;
+}
+
+.review_button {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    position: relative;
+    top: -123px;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 668px;
+    min-height: 457px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 79px;
+  }
+
+  .reviews__name {
+    order: 0;
+    width: 334px;
+    height: 53px;
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .review__toggles {
+    order: 4;
+    width: auto;
+    border: none;
+  }
+
+  .review__left {
+    border: none;
+    width: 85px;
+  }
+
+  .review__right {
+    border: none;
+    width: 90px;
+    background-position: center center;
+  }
+
+  .reviews__list {
+    order: 2;
+    margin-top: 28px;
+    margin-bottom: 60px;
+  }
+
+  .review_button {
+    order: 1;
+    width: 175px;
+    height: 53px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+
+  .reviews__person {
+    font-size: 18px;
+    width: 334px;
+    margin: 0;
+    order: 3;
+  }
+
+}
