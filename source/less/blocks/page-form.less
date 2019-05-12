@@ -1,6 +1,6 @@
 .page-form {
   background-color: #ffffff;
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 }
 
 .page-form__name {
@@ -9,4 +9,47 @@
   padding-bottom: 76px;
   margin-bottom: 23px;
   background-color: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+  .page-form__name {
+    position: relative;
+    z-index: 0;
+    top: -40px;
+    padding-top: 93px;
+    padding-bottom: 90px;
+    border-top: 1px solid #ececec;
+  }
+
+  .page-form__name::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 770px 24px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-form__name {
+    position: relative;
+    z-index: 0;
+    top: -40px;
+    padding-top: 93px;
+    padding-bottom: 115px;
+    margin-bottom: 68px;
+    border-top: 1px solid #ececec;
+  }
+
+  .page-form__name::after {
+    width: 100%;
+    height: 34px;
+    background-size: 1150px 34px;
+  }
+
 }

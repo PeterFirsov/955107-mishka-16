@@ -1,0 +1,150 @@
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3940px;
+}
+
+.modal__background {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal__wrapper {
+  position: fixed;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  background-color: #ffffff;
+  border-top: 2px solid #c7c7c7;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  margin-left: -160px;
+  margin-top: -168px;
+  box-shadow: 0 10px 5px -3px #cdcdcd;
+}
+
+.modal__name {
+  width: 151px;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.modal__span {
+  display: block;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.modal__choise-size {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.modal__choise-size-indicator {
+  display: block;
+  width: 82px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #ececec;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal__choise-size input[type="radio"]:checked + .modal__choise-size-indicator {
+  border: 2px solid #63d1bb;
+}
+
+.modal__choise-size-indicator:hover {
+  border: 2px solid #c7c7c7;
+}
+
+.modal__button {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #63d1bb;
+  color: #ffffff;
+  border: none;
+  padding-top: 17px;
+  padding-bottom: 16px;
+}
+
+.modal-show {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    height: 3710px;
+  }
+
+  .modal__wrapper {
+    width: 566px;
+    margin-left: -283px;
+    padding-bottom: 47px;
+    box-shadow: 0 5px 5px 1px #cdcdcd;
+  }
+
+  .modal__name {
+    width: 354px;
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 14px;
+  }
+
+  .modal__span {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 22px;
+  }
+
+  .modal__choise-size {
+    width: 351px;
+    margin-bottom: 30px;
+  }
+
+  .modal__choise-size-indicator {
+    width: 112px;
+    padding-bottom: 13px;
+  }
+
+  .modal__button {
+    width: 350px;
+  }
+
+}
+
+@media (min-width: 1150px) {
+  .modal {
+    height: 3623px;
+  }
+}

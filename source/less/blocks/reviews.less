@@ -60,6 +60,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
+  font-size: 0;
 }
 
 .review__right {
@@ -71,6 +72,17 @@
   background-repeat: no-repeat;
   background-position: 35px center;
   background-color: #ffffff;
+  font-size: 0;
+}
+
+.review__left:hover,
+.review__right:hover {
+  opacity: 0.6;
+}
+
+.review__left:active,
+.review__right:active {
+  opacity: 0.3;
 }
 
 .review_button {
@@ -95,7 +107,14 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
+    background-size: 350px 457px;
     padding-top: 79px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx)  {
+    .reviews__wrapper {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__name {
