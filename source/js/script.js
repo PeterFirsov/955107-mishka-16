@@ -1,4 +1,5 @@
-var link = document.querySelector(".feature__button, .site-video__button");
+var link = document.querySelector(".feature__button");
+var linkcatalog = document.querySelectorAll(".site-catalog__svg-link");
 var popup = document.querySelector(".modal");
 var close = document.querySelector(".modal__background");
 var toggle = document.querySelector(".main-nav__toggle");
@@ -24,11 +25,21 @@ toggle.addEventListener("click", function (evt) {
   x.classList.toggle("main-nav__toggle--close");
 });
 
+for (var i = 0; i < linkcatalog.length; i++) {
+  linkcatalog[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+  });
+};
+
+close.addEventListener("click", function (evt) {
+  popup.classList.remove("modal-show");
+});
+
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
 });
 
-close.addEventListener("click", function (evt) {
-  popup.classList.remove("modal-show");
-});
+
+
