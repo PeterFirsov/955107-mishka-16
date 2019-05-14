@@ -32,6 +32,15 @@ for (var i = 0; i < linkcatalog.length; i++) {
   });
 };
 
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("modal-show")) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    }
+  }
+});
+
 close.addEventListener("click", function (evt) {
   popup.classList.remove("modal-show");
 });
