@@ -41,11 +41,27 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-close.addEventListener("click", function (evt) {
-  popup.classList.remove("modal-show");
+popup.addEventListener("mouseup", function(evt) {
+  if (evt.target.closest('.modal__wrapper') === null) {
+    popup.classList.remove("modal-show");
+  }
 });
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
 });
+
+(function(evt) {
+  evt.matches = evt.matches || evt.mozMatchesSelector || evt.msMatchesSelector || evt.oMatchesSelector || evt.webkitMatchesSelector;
+  evt.closest = evt.closest || function closest(selector) {
+    if (!this) return null;
+    if (this.matches(selector)) return this;
+    if (!this.parentElement) {
+      return null
+    } else return this.parentElement.closest(selector)
+  };
+}(Element.prototype));
+
+
+
