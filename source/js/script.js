@@ -62,6 +62,3 @@ link.addEventListener("click", function (evt) {
     } else return this.parentElement.closest(selector)
   };
 }(Element.prototype));
-
-
-
