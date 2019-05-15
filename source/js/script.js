@@ -10,9 +10,9 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-storage = localStorage.getItem("name");
+  storage = localStorage.getItem("name");
 } catch (err) {
-isStorageSupport = false;
+  isStorageSupport = false;
 }
 
 x.classList.add("main-nav__toggle--show");
@@ -35,13 +35,13 @@ for (var i = 0; i < linkcatalog.length; i++) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (popup.classList.contains("modal-show")) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
     }
   }
 });
 
-(function(evt) {
+(function (evt) {
   evt.matches = evt.matches || evt.mozMatchesSelector || evt.msMatchesSelector || evt.oMatchesSelector || evt.webkitMatchesSelector;
   evt.closest = evt.closest || function closest(selector) {
     if (!this) return null;
@@ -52,7 +52,7 @@ window.addEventListener("keydown", function (evt) {
   };
 }(Element.prototype));
 
-popup.addEventListener("mouseup", function(evt) {
+popup.addEventListener("mouseup", function (evt) {
   if (evt.target.closest('.modal__wrapper') === null) {
     popup.classList.remove("modal-show");
   }
