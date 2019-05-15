@@ -1,16 +1,32 @@
 .copyright {
-  display: flex;
   font-size: 19px;
   line-height: 18px;
-  justify-content: center;
-  align-items: center;
 }
 
 .copyright__text {
+  display: block;
+  margin-top: -4px;
   margin-right: 29px;
+  color: #000000;
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 5px;
-  display: block;
+  text-decoration: none;
+}
+
+.copyright__svg {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover .copyright__svg {
+  fill: #46c1ae;
+}
+
+.copyright__link:active .copyright__svg,
+.copyright__link:active .copyright__text {
+  opacity: 0.3;
 }
