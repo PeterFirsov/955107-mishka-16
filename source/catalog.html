@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <title>HTML Academy: Мишка </title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body>
@@ -45,7 +48,7 @@
         <li class="site-basket__item">
           <a class="site-basket__button" href="#">Корзина: пока пуста
             <svg class="site-basket__svg" width="20.294px" height="18.849px">
-              <use xlink:href="img/sprite.svg#icon-basket"></use>
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
           </a>
         </li>
@@ -93,7 +96,7 @@
               <span class="site-catalog__basket-price">1 200 руб.
                 <a class="site-catalog__svg-link" href="#">
                   <svg class="site-catalog__svg" width="20.294px" height="18.849px">
-                    <use xlink:href="img/sprite.svg#icon-basket"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
               </span>
@@ -126,7 +129,7 @@
               <span class="site-catalog__basket-price">690 руб.
                 <a class="site-catalog__svg-link" href="#">
                   <svg class="site-catalog__svg" width="20.294px" height="18.849px">
-                    <use xlink:href="img/sprite.svg#icon-basket"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
               </span>
@@ -159,7 +162,7 @@
               <span class="site-catalog__basket-price">1 500 руб.
                 <a class="site-catalog__svg-link" href="#">
                   <svg class="site-catalog__svg" width="20.294px" height="18.849px">
-                    <use xlink:href="img/sprite.svg#icon-basket"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
               </span>
@@ -203,7 +206,7 @@
     <div class="page-footer__wrapper">
       <a class="page-footer__link" href="#" aria-label="Логотип Мишка">
         <svg class="page-footer__logo" width="101.615px" height="34.056px">
-          <use xlink:href="img/sprite.svg#icon-footer-logo"></use>
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <div class="page-footer__social">
@@ -211,7 +214,7 @@
           <li class="social-list__item">
             <a class="social-list__inst" href="#" aria-label="Наш Инстаграм">
               <svg class="social-list__svg" width="21.769px" height="21.334px">
-                <use xlink:href="img/sprite.svg#icon-inst"></use>
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -225,7 +228,7 @@
           <li class="social-list__item">
             <a class="social-list__tw" href="#" aria-label="Наш Твиттер">
               <svg class="social-list__svg" width="23.494px" height="20.168px">
-                <use xlink:href="img/sprite.svg#icon-tw"></use>
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -236,7 +239,7 @@
           aria-label="переход на сайт HTML Academy">
           <span class="copyright__text">Разработано</span>
           <svg class="copyright__svg" width="26.943px" height="34.09px">
-            <use xlink:href="img/sprite.svg#icon-html"></use>
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
