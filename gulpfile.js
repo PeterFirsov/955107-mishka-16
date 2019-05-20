@@ -9,6 +9,8 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var htmlmin = require("gulp-html-minifier");
+var minifyjs = require("gulp-js-minify");
 var imagemin = require("gulp-imagemin");
 var del = require("del");
 var server = require("browser-sync").create();
@@ -26,6 +28,18 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("js", function(){
+  return gulp.src("source/js/**")
+    .pipe(minifyjs())
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("images", function () {
@@ -51,17 +65,7 @@ gulp.task("sprite", function() {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
-});
-
-gulp.task("html", function () {
-  return gulp.src([
-    "source/*.html"
+    "source/img/**"
   ], {
     base: "source"
   })
@@ -90,5 +94,5 @@ gulp.task("refresh", function (done) {
     done();
     });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "js"));
 gulp.task("start", gulp.series("build", "server"));
