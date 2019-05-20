@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body>
@@ -45,7 +48,7 @@
         <li class="site-basket__item">
           <a class="site-basket__button" href="#">Корзина: пока пуста
             <svg class="site-basket__svg" width="20.294px" height="18.849px">
-              <use xlink:href="img/sprite.svg#icon-basket"></use>
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
           </a>
         </li>
@@ -76,7 +79,7 @@
           <a class="representation__link representation__link--interior" href="#">
             Предметы <br> интерьера
             <svg class="representation__svg" width="40.219px" height="62.411px">
-              <use xlink:href="img/sprite.svg#icon-lamp"></use>
+              <use xlink:href="img/sprite.svg#icon-interior"></use>
             </svg>
           </a>
         </li>
@@ -84,7 +87,7 @@
           <a class="representation__link representation__link--toys" href="#">
             Детские <br> игрушки
             <svg class="representation__svg representation__svg--toys" width="60px" height="59.62px">
-              <use xlink:href="img/sprite.svg#icon-block"></use>
+              <use xlink:href="img/sprite.svg#icon-toys"></use>
             </svg>
           </a>
         </li>
@@ -152,37 +155,37 @@
         <li class="about-us__link about-us__link--eco">
           Экологически <br> чистые материалы
           <svg class="about-us__link-eco" width="31.972px" height="37.301px">
-            <use xlink:href="img/sprite.svg#icon-eco"></use>
+            <use xlink:href="img/sprite.svg#icon-feature-flower"></use>
           </svg>
         </li>
         <li class="about-us__link about-us__link--money">
           Скандинавский стиль <br> по российской цене
           <svg class="about-us__link-money" width="46.575px" height="27.332px">
-            <use xlink:href="img/sprite.svg#icon-money"></use>
+            <use xlink:href="img/sprite.svg#icon-feature-money"></use>
           </svg>
         </li>
         <li class="about-us__link about-us__link--like">
           Увеличивает лайки <br> на фотографиях
           <svg class="about-us__link-like" width="33.05px" height="27.857px">
-            <use xlink:href="img/sprite.svg#icon-like"></use>
+            <use xlink:href="img/sprite.svg#icon-feature-heart"></use>
           </svg>
         </li>
         <li class="about-us__link about-us__link--love">
           Связано вручную с <br> любовью и умилением
           <svg class="about-us__link-love" width="34.373px" height="34.373px">
-            <use xlink:href="img/sprite.svg#icon-love"></use>
+            <use xlink:href="img/sprite.svg#icon-feature-ball"></use>
           </svg>
         </li>
         <li class="about-us__link about-us__link--support">
           Поддержка отечественного <br> производителя
           <svg class="about-us__link-support" width="54.156px" height="23.183px">
-            <use xlink:href="img/sprite.svg#icon-support"></use>
+            <use xlink:href="img/sprite.svg#icon-feature-rocket"></use>
           </svg>
         </li>
         <li class="about-us__link about-us__link--pakege">
           Поставляется в <br> подарочной упаковке
           <svg class="about-us__link-pakege" width="32.666px" height="32.486px">
-            <use xlink:href="img/sprite.svg#icon-pakege"></use>
+            <use xlink:href="img/sprite.svg#icon-feature-gift"></use>
           </svg>
         </li>
       </ul>
@@ -250,7 +253,7 @@
     <div class="page-footer__wrapper">
       <a class="page-footer__link" href="#" aria-label="Логотип Мишка">
         <svg class="page-footer__logo" width="101.615px" height="34.056px">
-          <use xlink:href="img/sprite.svg#icon-footer-logo"></use>
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <div class="page-footer__social">
@@ -258,7 +261,7 @@
           <li class="social-list__item">
             <a class="social-list__inst" href="#" aria-label="Наш Инстаграм">
               <svg class="social-list__svg" width="21.769px" height="21.334px">
-                <use xlink:href="img/sprite.svg#icon-inst"></use>
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -272,7 +275,7 @@
           <li class="social-list__item">
             <a class="social-list__tw" href="#" aria-label="Наш Твиттер">
               <svg class="social-list__svg" width="23.494px" height="20.168px">
-                <use xlink:href="img/sprite.svg#icon-tw"></use>
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -283,7 +286,7 @@
           aria-label="переход на сайт HTML Academy">
           <span class="copyright__text">Разработано</span>
           <svg class="copyright__svg" width="26.943px" height="34.09px">
-            <use xlink:href="img/sprite.svg#icon-html"></use>
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
