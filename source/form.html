@@ -134,44 +134,40 @@
           <div class="form__fio-wrapper">
             <span class="form__name form__name--fio">ФИО</span>
             <div class="form__fio-wrapper-inner">
-              <label class="form__fio-text">Имя:</label>
+              <label class="form__fio-text" for="name">Имя:</label>
               <input class="form__fio-input form__fio-input--name" type="text" name="Имя"
-                placeholder="Введите ваше имя*" required>
-              <label class="form__fio-text">Фамилия:</label>
+                placeholder="Введите ваше имя*" required id="name">
+              <label class="form__fio-text" for="secondname">Фамилия:</label>
               <input class="form__fio-input form__fio-input--name-second" type="text" name="Фамилия"
-                placeholder="Укажите фамилию*" required>
-              <label class="form__fio-text">Отчество:</label>
+                placeholder="Укажите фамилию*" required id="secondname">
+              <label class="form__fio-text" for="thirdname">Отчество:</label>
               <input class="form__fio-input form__fio-input--name-third" type="text" name="Отчество"
-                placeholder="Отчество, если желаете">
+                placeholder="Отчество, если желаете" id="thirdname">
             </div>
           </div>
         </fieldset>
         <fieldset class="form__tel">
           <div class="form__tel-wrapper">
-            <span class="form__name form__name--tel">ТЕЛ</span>
-            <label class="form__tel-text">
-              <input class="form__tel-input" type="tel" name="Телефон" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              <svg class="form__tel-svg" width="24.829px" height="24.333px">
-                <use xlink:href="img/sprite.svg#icon-phone"></use>
-              </svg>
-            </label>
+            <label for="tel" class="form__name form__name--tel">ТЕЛ</label>
+            <input id="tel" class="form__tel-input" type="tel" name="Телефон" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="form__tel-svg" width="24.829px" height="24.333px">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="form__mail">
           <div class="form__mail-wrapper">
-            <span class="form__name form__name--mail">E-MAIL</span>
-            <label class="form__mail-text">
-              <input class="form__mail-input" type="email" name="E-Mail" placeholder="Ваш Email*" required>
-              <svg class="form__mail-svg" width="32px" height="32px">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
-              </svg>
-            </label>
+            <label for="mail" class="form__name form__name--mail">E-MAIL</label>
+            <input id="mail" class="form__mail-input" type="email" name="E-Mail" placeholder="Ваш Email*" required>
+            <svg class="form__mail-svg" width="32px" height="32px">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="form__text">
           <div class="form__text-wrapper">
-            <span class="form__name form__name--text">ДОП</span>
-            <textarea class="form__text-textarea" name="text">Опишите все ваши пожелания к заказу
+            <label for="text" class="form__name form__name--text">ДОП</label>
+            <textarea id="text" class="form__text-textarea" name="text">Опишите все ваши пожелания к заказу
               </textarea>
           </div>
         </fieldset>
