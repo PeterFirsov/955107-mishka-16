@@ -32,12 +32,15 @@
   margin-bottom: 5px;
 }
 
-.site-video__svg {
+.site-video__name::before {
+  content: "";
   position: absolute;
   top: 28px;
   left: 32px;
   width: 32px;
   height: 32px;
+  background-image: url("../../img/icon-video.svg");
+  background-repeat: no-repeat;
 }
 
 .site-video__image {
@@ -106,7 +109,7 @@
     margin-bottom: 32px;
   }
 
-  .site-video__svg {
+  .site-video__name::before {
     top: -5px;
     left: 40px;
   }
@@ -161,7 +164,7 @@
     margin-bottom: 32px;
   }
 
-  .site-video__svg {
+  .site-video__name::before {
     top: 0;
     left: 0;
   }
